@@ -45,7 +45,7 @@ html {
     display: flex;
     justify-content: center;
     height: 100%;
-    background-color: blueviolet;
+    background-color: rgba(91, 13, 155, 0.76);
     box-shadow: 2px 5px 5px rgb(0, 0, 0);
 }
 .life-bar .life.danger {
@@ -77,4 +77,49 @@ html {
     height: 100%;
     text-align: center;
     box-shadow: 0 2px 10px rgba(10, 10, 10, 0.15);
+}
+/* Área dos botões */
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    padding: 5px 10px;
+    margin: 0px 10px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    
+} 
+
+.new-game {
+    background-color: #4252afd3;
+    color: #fff;
+    border-color: #4252afd3;
+}
+
+.attack {
+    background-color: #e51c23d5;
+    color: #fff;
+    border-color: #e51c23d5;
+}
+
+.especial-attack {
+    background-color: #ff9900e0;
+    color: #000;
+    border-color: #ff9900e0;
+}
+
+.heal {
+    background-color: #269b24d7;
+    color: #fff;
+    border-color: #269b24d7;
+}
+
+.give-up {
+    background-color: rgba(187, 187, 187, 0.849);
+    color: #000;
+    border-color: rgba(187, 187, 187, 0.849);
 }
