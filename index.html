@@ -16,22 +16,22 @@
         <div id="wallpaper">
             <div class="panel scores">
                 <div class="score">
-                    <h1>Jogador</h1>
+                    <h1 class="h1player">Jogador</h1>
                     <div class="life-bar">
                         <div class="life"
                             :class="{danger: playerLife < 20}"
                             :style="{width: playerLife + '%'}"></div>
                     </div>
-                    <div>{{ playerLife }}%</div>
+                    <div style="background-color: rgba(0, 0, 0, 0.651); color: rgb(255, 255, 255);">{{ playerLife }}%</div>
                 </div>
                 <div class="score">
-                    <h1>Monstro</h1>
+                    <h1 class="h1monster">Monstro</h1>
                     <div class="life-bar">
                         <div class="life"
                             :class="{danger: monsterLife < 20}"
                             :style="{width: monsterLife + '%'}"></div>
                     </div>
-                    <div>{{ monsterLife }}%</div>
+                    <div style="background-color: rgba(0, 0, 0, 0.664); color: rgb(255, 255, 255); text-transform: uppercase;">{{ monsterLife }}%</div>
                 </div>
             </div>
             <div v-if="hasResult" class="panel result">
